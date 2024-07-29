@@ -1,15 +1,15 @@
-char    *strcpy(char *dst, const char *src)
+char    *strcpy(char *dest, const char *src)
 {
     int i;
     
-    if (!dst || !src)
+    if (!dest || !src)
         return (0);
     i = 0;
     while (src[i])
     {
-        dst[i] = src[i];
+        dest[i] = src[i];
         i++;
     }
-    dst[i] = '\0';
-    return (dst);
+    dest[i] = '\0';
+    return (dest);
 }
