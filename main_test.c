@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    char *str = "abc123ABC";
+    char *str = "abc123ABCabc";
     printf("strlen : libc: %ld, libft: %ld\n", strlen(str), ft_strlen(str));
     printf("toupper : libc: %c, libft: %c\n", toupper(str[0]), ft_toupper(str[0]));
     printf("tolower : libc: %c, libft: %c\n", tolower(str[6]), ft_tolower(str[6]));
@@ -14,4 +14,5 @@ int main(void)
     printf("isascii : libc: %d, libft: %d\n", isascii(127), ft_isascii(127));
     printf("isprint : libc: %d, libft: %d\n", isprint(32), ft_isprint(32));
     printf("strchr : libc: %s, libft: %s\n", strchr(str, 'c'), ft_strchr(str, 'c'));
+    printf("strrchr: libc: %s, libft: %s\n", strrchr(str, 'a'), ft_strrchr(str, 'a'));
 }
