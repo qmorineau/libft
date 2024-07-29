@@ -14,13 +14,13 @@ void    ft_putchar(char c);
 void    ft_putstr(char const *s);
 void    ft_putnbr(int n);
 size_t ft_strlen(char *str);
-char    *strcpy(char *dst, const char *src);
-//strncpy
+char    *ft_strcpy(char *dest, const char *src);
+char    *ft_strncpy(char *dest, const char *src, size_t n);
 //strcat
 //strncat
 //strlcat
-//strcmp
-//strncmp
+int ft_strcmp(const char *s1, const char *s2);
+int strncmp(const char *s1, const char *s2, size_t n);
 //atoi
 //itoa
 //strjoin

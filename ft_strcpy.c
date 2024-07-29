@@ -1,9 +1,7 @@
-char    *strcpy(char *dest, const char *src)
+char    *ft_strcpy(char *dest, const char *src)
 {
     int i;
     
-    if (!dest || !src)
-        return (0);
     i = 0;
     while (src[i])
     {
